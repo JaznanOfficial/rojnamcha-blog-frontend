@@ -1,10 +1,10 @@
 "use client";
 import { Button, Container, Form, Nav, Navbar } from "react-bootstrap";
-import { Righteous } from "next/font/google";
 import { BsMoonStars } from "react-icons/bs";
+import { Hind_Siliguri } from "next/font/google";
 
-const righteous = Righteous({
-    weight: "400",
+const bengali = Hind_Siliguri({
+    weight: "600",
     subsets: ["latin"],
     display: "swap",
 });
@@ -13,18 +13,20 @@ const Navigation = () => {
     return (
         <Navbar expand="lg" className="py-5 px-sm-3">
             <Container>
-                <Navbar.Brand className={`${righteous.className} fs-1 `}>Rojnamcha</Navbar.Brand>
+                <Navbar.Brand className={`${bengali.className} fs-1 text-danger `}>
+                    রোজনামচা
+                </Navbar.Brand>
                 <Nav className=" d-block d-md-none fs-3 fw-bold">
                     <BsMoonStars />
                 </Nav>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mx-auto">
+                    {/* <Nav className="mx-auto">
                         <Nav.Link className="fs-5 me-lg-3 fw-bold text-black">Home</Nav.Link>
                         <Nav.Link className="fs-5 me-lg-3 fw-bold text-black">Blogs</Nav.Link>
                         <Nav.Link className="fs-5 me-lg-3 fw-bold text-black">About</Nav.Link>
-                    </Nav>
-                    <Form className="d-flex">
+                    </Nav> */}
+                    <Form className="d-flex mx-auto">
                         <Form.Control
                             type="search"
                             placeholder="Search"

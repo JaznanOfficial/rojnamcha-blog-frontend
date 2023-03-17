@@ -1,21 +1,26 @@
 import React from "react";
-import { Crete_Round } from "next/font/google";
+import { Anek_Bangla } from "next/font/google";
 
-const crete = Crete_Round({
+const anek = Anek_Bangla({
     subsets: ["latin"],
     display: "swap",
-    weight: "400",
+    weight: "500",
 });
 
 const Header = () => {
     return (
         <div className="my-5">
-            <h1
-                className={`${crete.className} w-75 mx-auto text-center `}
-                style={{ color: "#152035", fontSize: "60px", marginBottom: "12rem" }}
+            <h5
+                className={`${anek.className} w-75 mx-auto text-start `}
+                style={{ color: "#152035", fontSize: "40px", marginBottom: "12rem" }}
             >
-                Taking control of your daily life is easy when you know how!
-            </h1>
+                জীবনকে গভীরভাবে উপলব্ধির শ্রেষ্ঠ অবলম্বন হল আপনার নিজের হাতে লেখা নিজেরই জীবনের
+                হাসিকান্না এবং সুখ-দুঃখের রোজনামচা। <br /> যেখানে নিজের আয়নায় নিজেকে দেখতে পাবেন...{" "}
+                <br />
+                <br />
+                এটাও তেমনি এক যাযাবরের জীবনগল্প। যে কিনা জীবন থেকে পালিয়ে বেড়ায় প্রতিটা মুহুর্তে। যে
+                আপন করে নিতে পারে না পঁচে গলে ক্ষয়ে যাওয়া চারপাশকে...
+            </h5>
         </div>
     );
 };

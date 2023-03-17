@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import { Crete_Round } from "next/font/google";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import Post from "./Post";
+import { Crete_Round } from "next/font/google";
 
 const crete = Crete_Round({
     subsets: ["latin"],
@@ -15,7 +15,7 @@ const Posts = () => {
         <div className="mt-5">
             <h1
                 className={`${crete.className} w-50 mx-auto text-center`}
-                style={{ color: "#152035", marginBottom: "10rem" }}
+                style={{ color: "#152035", marginBottom: "5rem" }}
             >
                 Recent Post
             </h1>
@@ -26,6 +26,11 @@ const Posts = () => {
                     ))}
                 </Row>
             </Container>
+            <div className="my-5 text-center">
+                <button type="button" class="btn btn-danger">
+                    See All Posts
+                </button>
+            </div>
         </div>
     );
 };
