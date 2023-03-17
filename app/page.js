@@ -1,14 +1,13 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
 import styles from "./page.module.css";
-
-
-const inter = Inter({ subsets: ["latin"] });
+import Header from "./components/Header";
+import Posts from "./components/Posts";
 
 export default function Home() {
-    return;
-
-    <main>
-        <h1>hello world</h1>
-    </main>;
+    return (
+        <div>
+            <Header />
+            <Posts />
+        </div>
+    );
 }

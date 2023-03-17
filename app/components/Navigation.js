@@ -11,7 +11,7 @@ const righteous = Righteous({
 
 const Navigation = () => {
     return (
-        <Navbar expand="lg" className="py-5 px-sm-3" sticky="top">
+        <Navbar expand="lg" className="py-5 px-sm-3">
             <Container>
                 <Navbar.Brand className={`${righteous.className} fs-1 `}>Rojnamcha</Navbar.Brand>
                 <Nav className=" d-block d-md-none fs-3 fw-bold">
