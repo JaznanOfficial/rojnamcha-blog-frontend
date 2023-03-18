@@ -5,6 +5,7 @@ import { AiOutlineCalendar } from "react-icons/ai";
 import { BsDashLg } from "react-icons/bs";
 import { BsClock } from "react-icons/bs";
 import { Crete_Round } from "next/font/google";
+import Link from "next/link";
 
 const crete = Crete_Round({
     subsets: ["latin"],
@@ -36,7 +37,9 @@ const Post = () => {
                         className={`${crete.className} headline-color mb-3 `}
                         style={{ cursor: "pointer" }}
                     >
-                        Creating an object that travels at 1% the speed of light?
+                        <Link href={"posts/1"}>
+                            Creating an object that travels at 1% the speed of light?
+                        </Link>
                     </h3>
                     <Card.Text>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nisi nesciunt
