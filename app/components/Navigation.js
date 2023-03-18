@@ -2,6 +2,7 @@
 import { Button, Container, Form, Nav, Navbar } from "react-bootstrap";
 import { BsMoonStars } from "react-icons/bs";
 import { Hind_Siliguri } from "next/font/google";
+import Link from "next/link";
 
 const bengali = Hind_Siliguri({
     weight: "600",
@@ -21,11 +22,11 @@ const Navigation = () => {
                 </Nav>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    {/* <Nav className="mx-auto">
-                        <Nav.Link className="fs-5 me-lg-3 fw-bold text-black">Home</Nav.Link>
-                        <Nav.Link className="fs-5 me-lg-3 fw-bold text-black">Blogs</Nav.Link>
-                        <Nav.Link className="fs-5 me-lg-3 fw-bold text-black">About</Nav.Link>
-                    </Nav> */}
+                    <Nav className="mx-auto">
+                        <Link href={"/"} className="fs-5 me-lg-3 fw-bold text-black">
+                            Home
+                        </Link>
+                    </Nav>
                     <Form className="d-flex mx-auto">
                         <Form.Control
                             type="search"
