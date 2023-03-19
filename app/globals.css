@@ -99,6 +99,23 @@ a {
 .headline-color {
     color: #152035 !important;
 }
+.text-gray {
+    color: gray !important;
+}
+.text-white {
+    color: white !important;
+}
+.text-gray:hover {
+    color: white !important;
+    background-color: #dc3545 !important;
+    border-color: #dc3545 !important;
+}
+
+.prevLink:hover {
+    color: white !important;
+    background-color: #dc3545 !important ;
+    border-color: #dc3545 !important;
+}
 
 @media (prefers-color-scheme: dark) {
     html {
