@@ -12,15 +12,7 @@ const superAdmin = ({ placeholder }) => {
 
     const config = {
         readonly: false,
-        uploader: {
-            url: "https://xdsoft.net/jodit/finder/?action=fileUpload",
-        },
-        filebrowser: {
-            ajax: {
-                url: "https://xdsoft.net/jodit/finder/",
-            },
-            height: 580,
-        },
+
         height: 500,
         placeholder: placeholder || "Start typings...",
     };
@@ -41,10 +33,10 @@ const superAdmin = ({ placeholder }) => {
 
                 config={config}
                 tabIndex={1} // tabIndex of textarea
-                // onBlur={(newContent) => setContent(newContent)} // preferred to use only this option to update the content for performance reasons
-                onChange={(newContent) => {
-                    setContent(newContent);
-                }}
+                onBlur={(newContent) => setContent(newContent)} // preferred to use only this option to update the content for performance reasons
+                // onChange={(newContent) => {
+                // setContent(newContent);
+                // }}
             />
             <Button variant="outline-danger" className="m-1" onClick={handleSubmit}>
                 <strong>Post this Blog</strong>
